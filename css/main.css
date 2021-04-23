@@ -1,0 +1,43 @@
+body {
+    font-size: 18px;
+    line-height: 1;
+}
+
+div,
+h2,
+nav,
+footer {
+    margin: 1.25rem auto;
+    max-width: 760px;
+}
+
+div,
+footer {
+    text-align: center;
+    padding: .25em;
+}
+
+li a:hover {
+    color: orange;
+}
+
+li a:active {
+    color: red;
+}
+
+img {
+    float: right;
+    max-width: 10em;
+    margin-top: -3em;
+    margin-right: 1.5em;
+
+}
+
+div,
+footer {
+    background-color: cadetblue;
+    border-radius: 8px;
+}
+footer p {
+    font-size:.95em;
+}
