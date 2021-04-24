@@ -1,9 +1,9 @@
 body {
-    font-size: 18px;
-    line-height: 1;
+    font-size: 1em;
+    line-height: 1.1;
 }
 
-div,
+header,
 h2,
 nav,
 footer {
@@ -11,7 +11,7 @@ footer {
     max-width: 760px;
 }
 
-div,
+header,
 footer {
     text-align: center;
     padding: .25em;
@@ -33,7 +33,7 @@ img {
 
 }
 
-div,
+header,
 footer {
     background-color: cadetblue;
     border-radius: 8px;
