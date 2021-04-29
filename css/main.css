@@ -3,6 +3,11 @@ body {
     line-height: 1.1;
 }
 
+h1,
+h2 {
+    font-family: Roboto, sans-serif;
+}
+
 header,
 h2,
 nav,
@@ -17,11 +22,11 @@ footer {
     padding: .25em;
 }
 
-li a:hover {
+a:hover {
     color: orange;
 }
 
-li a:active {
+a:active {
     color: red;
 }
 
@@ -30,7 +35,6 @@ img {
     max-width: 10em;
     margin-top: -3em;
     margin-right: 1.5em;
-
 }
 
 header,
@@ -38,6 +42,7 @@ footer {
     background-color: cadetblue;
     border-radius: 8px;
 }
+
 footer p {
-    font-size:.95em;
+    font-size: .95em;
 }
