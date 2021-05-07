@@ -1,0 +1,1 @@
+document.getElementById('currentDate').textContent = new Date().toLocaleString('en-US', "");

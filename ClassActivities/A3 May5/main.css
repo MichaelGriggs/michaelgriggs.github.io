@@ -1,0 +1,37 @@
+nav {
+    margin: auto;
+    margin-top: 0;
+    line-height: 1.5em;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: .5em;
+    padding: 8px;
+    background-color: #540D6E;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    padding: .4em;
+}
+
+#box1 {
+    background-color: #EE4266;
+}
+
+#box2 {
+    background-color: #FFD23F;
+}
+
+#box3 {
+    background-color: #3BCEAC;
+}

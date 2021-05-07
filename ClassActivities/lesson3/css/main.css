@@ -1,0 +1,71 @@
+body {
+    max-width: 800px;
+    margin: auto;
+}
+
+header,
+footer {
+    float: center;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    padding: .5vmin;
+    line-height: 2vh;
+}
+main {
+    background-color: wheat;
+}
+img {
+    max-width:18vmin;
+    padding: 2vmin;
+}
+h1,
+h2 {
+    font-family: "Noto Serif", sans-serif;
+}
+
+h1 {
+    font-size: 5vmin;
+}
+
+h2 {
+    font-size: 3vmin;
+}
+
+p,
+a,
+footer {
+    font-size: 2.5vmin;
+    font-family: "Ubuntu", sans-serif;
+}
+
+nav ul li {
+    background-color: navy;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: gray;
+    padding: 2vmin;
+    margin: 0 0 0 0;
+}
+
+ul li {
+    list-style-type: none;
+    background-color: white;
+    padding: 1.8vmin;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    color: white;
+}

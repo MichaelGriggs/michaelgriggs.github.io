@@ -1,0 +1,14 @@
+main {
+    max-width: 600px;
+}
+
+.flexboxes {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+img {
+    max-width: 200px;
+}
