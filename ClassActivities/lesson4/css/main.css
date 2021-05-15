@@ -148,7 +148,55 @@ footer div a {
 
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) and (max-width:799px) {
+    nav {
+        margin: 0 auto;
+        background-color: grey;
+    }
+
+    .navigation {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    .navigation li:first-child {
+        display: block;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation a {
+        display: block;
+        color: white;
+        padding: .75rem;
+        text-align: right;
+        text-decoration: none;
+    }
+
+    .navigation a:hover {
+        color: #000;
+        background-color: white;
+        font-weight: 600;
+    }
+
+    .responsive li {
+        display: block;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 800px) {
     .navigation {
         display: flex;
     }
@@ -168,7 +216,7 @@ footer div a {
     }
 
     main {
-        max-width: 700px;
+        max-width: 800px;
         margin: 0 auto;
     }
 
@@ -227,14 +275,22 @@ footer div a {
         background-color: wheat;
     }
 
+    footer h4 {
+        margin-bottom: 2vmin;
+    }
+
     .footerContent {
-        max-width: 700px;
+        max-width: 800px;
         margin: 0 auto;
         display: flex;
     }
 
     .footerContent div {
         padding-top: 5vmin;
+    }
+
+    #currentDate {
+        font-size: 2vmin;
     }
 
     .mapImg {
