@@ -1,0 +1,106 @@
+body {
+    max-width: 760px;
+    margin: 0 auto;
+}
+nav {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    border: 2px solid black;
+    padding: 15px;
+}
+nav ul {
+    padding-left:0;
+}
+nav img{
+    margin-right:375px;
+}
+nav ul li {
+    display: inline;
+    list-style: none;
+    
+}
+li a{
+    text-decoration: none;
+    background-color:grey;
+    color: black;
+    padding: 10px;
+}
+
+/*main {
+    display: grid;
+    max-width: 700px;
+    margin-top: 20px;
+    grid-template-rows: repeat(2, 150px);
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    padding-left: 30px;
+}
+
+main section,
+img,
+div {
+    background-color: lightgrey;
+    border: 2px solid black;
+}
+
+section {
+    grid-row: 1;
+    grid-column: 1 / 4;
+}
+
+main img {
+    grid-row: 1;
+    grid-column: 4 / 7;
+}
+
+.card1 {
+    grid-row: 2;
+    grid-column: 1 / 2;
+}
+
+.card2 {
+    grid-row: 2;
+    grid-column: 2 / 5;
+}
+
+.card3 {
+    grid-row: 2;
+    grid-column: 5 / 7;
+}
+div {
+    text-align: center;
+}*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgrey;
+}
+main section, img, div {
+    margin:10px;
+    background-color: grey;
+}
+
+section {
+    max-width: 520px;
+}
+
+main img {
+    width: 200px;
+}
+div {
+    width: 233px;
+    height: 133px;
+}
+
+
+footer {
+    max-width:700px;    
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 20px auto;
+} 

@@ -1,0 +1,245 @@
+header,
+h2,
+h3,
+h4 {
+    font-family: "Noto Serif", sans-serif;
+}
+
+a,
+p,
+span {
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+.logo {
+    width: 15%;
+    float: left;
+    margin-right: 2vmin;
+    padding: .5vmin;
+}
+
+header,
+footer {
+    background-color: #4682b4;
+    line-height: 3vmin;
+}
+
+h2 {
+    font-size: 7vmin;
+    margin-top: 0;
+    padding-top: 2vmin;
+}
+
+h3,
+div {
+    font-size: 5vmin;
+}
+
+p,
+a {
+    font-size: 4vmin;
+}
+
+nav {
+    margin: 0 auto;
+    background-color: olivedrab;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: #000;
+    padding: .75rem;
+    text-align: right;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #000;
+    background-color: wheat;
+    font-weight: 600;
+}
+
+.responsive li {
+    display: block;
+}
+
+.heroImg {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+.summary {
+    background-color: wheat;
+    border: 2px solid grey;
+    border-radius: 4px;
+    line-height: 5vmin;
+}
+
+.forecast {
+    background-color: steelblue;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+
+.forecast div {
+    padding: 5vmin;
+    background-color: steelblue;
+    text-align: center;
+}
+
+.forecastDiv {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.articleImg {
+    width: 80%;
+}
+
+.moreText {
+    display: none;
+}
+
+.mapImg {
+    max-width: 80%;
+    margin: auto;
+    padding: 4vmin;
+}
+
+footer {
+    padding: 2vmin;
+}
+
+footer h4 {
+    margin-top: 0;
+}
+
+footer div a {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        color: #000;
+        text-align: center;
+    }
+
+    main {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        width: 15vmin;
+        padding-left: 15%
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .summary {
+        float: left;
+        margin-top: -40vmin;
+        margin-left: 5vmin;
+        position: relative;
+        z-index: 1;
+        padding: .5vmin;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .articleImg {
+        width: 150px;
+    }
+
+    .moreText {
+        display: inline;
+    }
+
+    .forecast h3 {
+        background-color: steelblue;
+        margin: 0;
+    }
+
+    .forecastDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: .5vmax;
+    }
+
+    .forecastItem {
+        font-size: 1vmax;
+        width: 3vmax;
+        height: 3vmax;
+        border: 1px white solid;
+        border-radius: 8px;
+    }
+
+    article {
+        background-color: wheat;
+    }
+
+    .footerContent {
+        max-width: 700px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .footerContent div {
+        padding-top: 5vmin;
+    }
+
+    .mapImg {
+        width: 40%;
+    }
+
+
+}
