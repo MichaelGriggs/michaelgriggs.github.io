@@ -4,18 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Week 4 Preston town page">
+    <meta name="description" content="Week 5 Preston town page">
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-    <title> Week 4 Preston Page </title>
+    <title> Week 5 Preston Page </title>
 </head>
 
 <body>
+
     <header>
+        <div id="pancakeDiv">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
         <img class="logo" src="images/logo.png" alt="Logo">
         <h2>acClimbatize</h2>
         <p>The weather source for those with their face on the face</p>
@@ -23,7 +27,7 @@
             <ul class="navigation">
                 <li class="menu"><a href="#">&#9776; Menu</a></li>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Preston</a></li>
+                <li class="active"><a href="#">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Storm Center</a></li>
                 <li><a href="#">Fish Haven</a></li>
@@ -43,35 +47,60 @@
         </section>
         <section class="forecast">
             <h3>Five Day Forecast</h3>
-            <div class="forecastDiv">
-                <div class="forecastItem">Forecast1</div>
-                <div class="forecastItem">Forecast2</div>
-                <div class="forecastItem">Forecast3</div>
-                <div class="forecastItem">Forecast4</div>
-                <div class="forecastItem">Forecast5</div>
-            </div>
+            <table class="forecastTable">
+                <th>One Day</th>
+                <th>Two Day</th>
+                <th>Three Day</th>
+                <th>Four Day</th>
+                <th>Five Day</th>
+                <tr>
+                    <td>
+                        <img src="images/cloud.png" alt="Forecast img">
+                        <p>Unknown</p>
+                    <td>
+                        <img src="images/cloud.png" alt="Forecast img">
+                        <p>Unknown</p>
+                    </td>
+                    <td>
+                        <img src="images/cloud.png" alt="Forecast img">
+                        <p>Unknown</p>
+                    </td>
+                    <td>
+                        <img src="images/cloud.png" alt="Forecast img">
+                        <p>Unknown</p>
+                    </td>
+                    <td>
+                        <img src="images/cloud.png" alt="Forecast img">
+                        <p>Unknown</p>
+                    </td>
+                </tr>
+            </table>
         </section>
         <article>
             <h3>Article Title</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span class="moreText"> Ea quo et voluptas
                     adipisci consequatur fugiat
                     rerum sequi natus totam laudantium voluptatem, magni provident! Ea dolor odio, exercitationem et
-                    facilis.</span>
+                    facilis. Here is some more text for good measure, but not too much! People have short attention
+                    spans and it's unfair to expect them to digest anything more substantial than a click-baity
+                    line.</span>
                 facere?</p>
-            <img class="articleImg" src="images/articleImg.jpg" alt="Article Image">
+            <div class="articleImgDiv">
+                <img class="articleImg" src="images/articleImg.jpg" alt="Article Image">
+            </div>
         </article>
     </main>
     <footer>
         <div class="footerContent">
             <img class="mapImg" src="images/mapImg.jpg" alt="Map Image">
             <div>
-                <h4>Contact information</h4>
+                <p>Contact information</p>
                 <p>Phone: 555-555-5555</p>
                 <p>Email: acclimbatize@placeholder</p>
                 <p id="currentDate"></p>
-                <a href="#"><img src="images/fb.png" alt="Facebook link" class="social"></a>
-                <a href="#"><img src="images/link.png" alt="LinkedIn link" class="social"></a>
-                <a href="#"><img src="images/yt.png" alt="YouTube link" class="social"></a>
+                <a href="https://www.facebook.com/  "><img src="images/fb.png" alt="Facebook link" class="social"></a>
+                <a href="https://www.linkedin.com/"><img src="images/link.png" alt="LinkedIn link" class="social"></a>
+                <a href="https://www.youtube.com/"><img src="images/yt.png" alt="YouTube link" class="social"></a>
             </div>
         </div>
     </footer>
@@ -79,17 +108,8 @@
     </script>
     <script src="js/currentDate.js">
     </script>
+    <script src="js/pancake.js">
+    </script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-<!--  -->

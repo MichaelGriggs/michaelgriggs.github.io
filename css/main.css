@@ -21,6 +21,9 @@ footer {
     text-align: center;
     padding: .25em;
 }
+nav ul li a {
+    text-decoration: none;
+}
 
 a:hover {
     color: orange;
