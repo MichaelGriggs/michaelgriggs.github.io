@@ -1,0 +1,13 @@
+h1 {
+	font-family: 'Press Start 2P', cursive;
+	
+}
+
+.title {
+	width: 100%;
+	height: 8em;
+	text-align: center;
+}
+.image {
+	max-width: 100vw;
+}

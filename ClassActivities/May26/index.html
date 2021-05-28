@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>May26 Activity</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <main>
+        <h2>Add two numbers whose sum is within 0-20 to fill this thang up.</h2>
+        <div class="container">
+            <div id="emptyDiv"></div>
+            <div id="fullDiv"></div>
+        </div>
+        <div class="buttonDiv">
+            <input type="text" id="input1" class="input">
+            <input type="text" id="input2" class="input">
+            <button onclick="addNumbers()" type="button">Add</button>
+        </div>
+    </main>
+    <script>
+        function addNumbers() {
+            var input1 = parseInt(document.getElementById("input1").value);
+            var input2 = parseInt(document.getElementById("input2").value);
+            var full = input1 + input2;
+            var empty = 20 - full;
+            document.getElementById("fullDiv").innerHTML = full;
+            document.getElementById("fullDiv").style.backgroundColor = "dodgerblue";
+            var pixelsFull = ((full / 20) * 300);
+            document.getElementById("fullDiv").style.height = `${pixelsFull}`;
+
+
+            document.getElementById("emptyDiv").innerHTML = empty;
+        }
+    </script>
+</body>
+
+</html>
