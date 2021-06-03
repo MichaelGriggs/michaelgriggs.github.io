@@ -1,0 +1,435 @@
+header,
+h2,
+h3,
+h4 {
+    font-family: "Noto Serif", sans-serif;
+    color: white;
+}
+.motto {
+    font-size:1em;
+}
+
+a,
+p,
+span,
+figcaption {
+    font-family: "Ubuntu", sans-serif;
+    font-size:.55em;
+}
+
+/*#pancakeDiv {
+    background-color: gold;
+    color: black;
+    height: 4em;
+    line-height: 1.25em;
+    align-content: center;
+}
+
+#pancakeDiv p {
+    margin-top: 0;
+    padding: .5em;
+    text-align: center;
+}*/
+
+
+.logo {
+    width: 4em;
+    float: left;
+    margin-right: 2em;
+    padding: 1em;
+}
+
+header,
+footer {
+    background-color: #4682b4;
+    line-height: 1em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 1em;
+}
+
+main h2 {
+    color: black;
+}
+
+h3,
+div {
+    font-size: 1.5em;
+}
+
+nav {
+    margin: 0 auto;
+    background-color: olivedrab;
+}
+
+.active a {
+    background-color: green;
+    color: white;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: #000;
+    padding: .75rem;
+    text-align: right;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #000;
+    background-color: wheat;
+    font-weight: 600;
+}
+
+.responsive li {
+    display: block;
+}
+/*
+.heroImg {
+    max-width: 100%;
+}*/
+
+main {
+    width: 100%;
+}
+.galleryDiv {
+    width: 90%;
+    margin: 1em auto;
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    justify-items: center;
+}
+.galleryImg {
+    width: 225px;
+    margin: 10px auto; 
+}
+figure img[data-src] {
+    filter: blur(.5em);
+}
+figure img {
+    filter: blur(0);
+    transition: filter 1.5s;
+}
+/*
+.summary {
+    background-color: wheat;
+    border: 2px solid grey;
+    border-radius: 4px;
+    line-height: 1em;
+}
+
+.forecast {
+    background-color: steelblue;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+
+.forecast div {
+    padding: .25em;
+    background-color: steelblue;
+    text-align: center;
+}
+
+.forecastTable {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+article h3 {
+    color: black;
+}
+
+.articleImg {
+    width: 100%;
+}
+
+.moreText {
+    display: none;
+}*/
+
+.mapImg {
+    max-width: 80%;
+    margin: auto;
+    padding: 5px;
+}
+
+footer {
+    padding: 8px;
+}
+
+footer h4 {
+    margin-top: 0;
+    font-size: 10px;
+}
+
+footer p,
+a {
+    font-size: 1.25rem;
+}
+
+footer div a {
+    display: none;
+}
+footer span {
+    font-size: 1.25rem;
+    display:none;
+}
+figcaption {
+    padding: .5em;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 601px) and (max-width:800px) {
+    main {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    nav {
+        margin: 0 auto;
+        background-color: wheat;
+    }
+
+    .navigation {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    .navigation li:first-child {
+        display: block;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation a {
+        display: block;
+        color: black;
+        padding: .75rem;
+        text-align: right;
+        text-decoration: none;
+    }
+
+    .navigation a:hover {
+        color: #000;
+        background-color: olivedrab;
+        font-weight: 600;
+    }
+
+    .responsive li {
+        display: block;
+    }
+
+    .logo {
+        width: 5em;
+
+    }
+    /*
+    .forecast {
+        display: flex;
+        justify-content: center;
+    }
+
+    .moreText {
+        display: inline;
+    }
+
+    .articleImgDiv {
+        display: flex;
+        justify-content: center;
+    }
+
+    .articleImg {
+        max-width: 500px;
+        margin: 0 auto 8px auto;
+    }*/
+
+    footer div a {
+        display: inline;
+    }
+
+    .social {
+        width: 20px;
+    }
+    footer span {
+        display: inline;
+    }
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 801px) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        color: #000;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        width: 5em;
+        padding-left: 15%;
+        padding-bottom: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    figure:hover {
+        box-shadow: 10px 10px 10px grey;
+    }
+    figure {
+        box-shadow: none;
+        transition: box-shadow .35s;
+    }
+    
+    
+    /*
+    .summary {
+        float: left;
+        margin-top: -20em;
+        margin-left: 5vmin;
+        position: relative;
+        z-index: 1;
+        height: 9em;
+        padding: 1em;
+        box-shadow: 10px 10px darkgrey;
+    }
+
+    article {
+        width: 100%;
+        max-width: 784px;
+        padding: .5em;
+        margin-top: 4px;
+    }
+
+    .articleImg {
+        width: 150px;
+    }
+
+    .moreText {
+        display: inline;
+    }
+
+    .forecast {
+        justify-items: center;
+
+    }
+
+    .forecast h3 {
+        background-color: steelblue;
+        max-width: 350px;
+        margin: .25em auto;
+    }
+
+    .forecastTable {
+        display: block;
+        max-width: 350px;
+        margin: 1em auto;
+        font-family: "Ubuntu", sans-serif;
+    }
+
+    .forecastTable th {
+        background-color: wheat;
+        border: 1px solid black;
+    }
+
+    .forecastTable tr {
+        background-color: lightgrey;
+    }
+
+    .forecastTable tr td {
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+    .forecastTable tr td img {
+        width: 40px;
+    }
+
+    article {
+        background-color: wheat;
+    }*/
+
+    footer h4 {
+        margin-bottom: 2vmin;
+    }
+
+    .footerContent {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .mapImg {
+        width: 40%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    footer div a {
+        display: inline;
+    }
+
+    .social {
+        width: 20px;
+    }
+    footer span {
+        display: inline;
+    }
+}
