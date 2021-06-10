@@ -1,0 +1,52 @@
+body {
+    font-family:"Ubuntu", sans-serif;
+}
+div {
+    box-shadow: 8px 8px 8px grey;
+    width: 250px;
+    margin: 0 auto;
+}
+table {
+    border-spacing: 0;
+    width: 250px;
+    height: 300px;
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+thead tr {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+tbody tr {
+    background-color: #e7ffed;
+    text-align: center;
+    border: 1px solid grey;
+}
+tbody tr:nth-child(odd) {    /*Here's my one instance of the nth-child*/
+    background-color:  #e7f0ed;
+}
+td[colspan] {
+    text-align: center;
+}
+ 
+table caption {
+background-color:  #7fb9c2;
+font-size:1.5rem;
+font-weight: bolder;
+padding: .25rem;
+}
+thead, tfoot {
+    background-color: #628ca6;
+}
+tfoot {
+    font-size: .75rem;
+    padding:.1rem;
+    border-collapse: collapse;
+}
+#novGoal {    /*Here's my one id/class*/
+    color: white;
+    background-color: #628ca6;
+    font-weight: bold;
+}
