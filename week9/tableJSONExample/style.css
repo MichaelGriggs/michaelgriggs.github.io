@@ -1,0 +1,67 @@
+table, thead {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #569cd6;
+  }
+  
+  td {
+    /* border: 1px solid #200505; */
+    text-align: left;
+    padding: 16px;
+    color: #b7b7b7;
+    
+  }
+  tr th {
+    color: #49657a;
+    text-align: left;
+    padding: 16px;
+    background-color: #182a38;
+ 
+ 
+  }
+  
+  tr:nth-child(even) {
+    background-color: #182a38;
+    color: #b7b7b7;
+  }
+ 
+  a:visited, a:link {
+     color: #32546f;
+  }
+ 
+  .title {
+     text-align: center;
+     padding: 50px 10px 10px 10px;
+     color: azure;
+  }
+ 
+  .formdata {
+    background-color: #569cd6;
+ 
+  }
+ 
+  button {
+    background-color: #04141f; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  button:hover {
+    background-color: #051e2e; 
+ 
+  }
+  .buttons {
+     width: auto;
+     margin-top: 20px;
+     background-color: #04141f;
+     padding: 10px;
+  }
+ 
+  body {
+     margin: 0px
+  }

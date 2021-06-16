@@ -4,47 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Week 8 storm center page to build a form">
-    <link rel="stylesheet" href="../../css/normalize.css">
+    <meta name="description" content="Week 9 Home page">
+    <link rel="stylesheet" href="../../../css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-    <title> Week 8 Storm Center </title>
+    <title> Week 9 Home Page </title>
 </head>
 
 <body>
 
-    <header class="thanksHeader">
-        <!--   <div id="pancakeDiv">
+    <header>
+        <div id="pancakeDiv">
             <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
-        </div>-->
+        </div>
         <img class="logo" src="images/logo.png" alt="Logo">
         <h2>acClimbatize</h2>
         <p>The weather source for those with their face on the face</p>
         <nav>
             <ul class="navigation">
                 <li class="menu"><a href="#">&#9776; Menu</a></li>
-                <li><a href="../../week9/lesson9/homePage/index.html">Home</a></li>
-                <li><a href="../../week6/lesson6/preston-6.html">Preston</a></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="../../../week6/lesson6/preston-6.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
-                <li class="active"><a href="#">Storm Center</a></li>
+                <li><a href="../../../week8/stormcenter/stormcenter.html">Storm Center</a></li>
                 <li><a href="#">Fish Haven</a></li>
-                <li><a href="../../week7/lesson7/gallery/gallery.html">Gallery</a></li>
+                <li><a href="../../../week7/lesson7/gallery/gallery.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
-    <main class="thanksMain">
-         <div class="thanksDiv"> Thank you for alerting us to severe weather. We'll keep an eye on it!</div>
+
+    <main>
+        <section class="intro">
+            <h2>A little about us</h2>
+            <p>Here at acClimbatize, we believe rockin' times come from rockin' info. That's why we're committed to
+                up-to-date weather information. That way, you can keep on living your best life, without worrying about
+                those clouds on the horizon.</p>
+            </section>
+        <div class="cards"></div>
+        <section class="outro">
+            <h2>Keep rockin'!</h2>
+            <img src="images/heroImg.jpg" alt="rock climber on the wall">
+            </section>
     </main>
-    <footer class="thanksFooter">
+
+    <footer>
         <div class="footerContent">
             <img class="mapImg" src="images/mapImg.jpg" alt="Map Image">
             <div>
                 <p>Contact information</p>
                 <p>Phone: 555-555-5555</p>
-                <p>Email: acclimbatize@placeholder</p>
+                <p>Email: climb@tize.com</p>
                 <p id="currentDate"></p>
                 <span>Social Links:</span>
                 <a href="https://www.facebook.com/  "><img src="images/fb.png" alt="Facebook link" class="social"></a>
@@ -57,11 +69,12 @@
     </script>
     <script src="js/currentDate.js">
     </script>
-    <script src="js/rating.js"></script>
-    <!-- <script src="js/pancake.js">
-    </script>-->
+    <script src="js/pancake.js">
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/fontLoader.js"></script>
+    <script src="js/townData.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,60 @@
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p, footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1  {
+    text-align: center;
+    color:darkslateblue;
+}
+.cards {
+    max-width: 95%;
+    margin: 0 auto;
+    background-color:lightgrey;
+    box-shadow: -10px -10px 10px 5px grey;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 1fr;
+    /* single most important and helpful line on this whole page*/
+    justify-items: center;
+}
+section {
+    background-color:rgb(100,149,237, .45);
+    padding: 1rem;
+    max-width: 250px;
+    border: 1px solid gray;
+    text-align: center;
+    line-height: 1rem;
+}
+section h2 {
+    margin-top:0;
+    color:darkslateblue;
+}
+section  img {
+    max-width: 70%;
+    margin: 0 15%;
+    box-shadow: 5px 5px 5px grey;
+}
+footer {
+    text-align: center;
+}
+
+
+
+
+@media only screen and (min-width: 450px) and (max-width:850px) {
+.cards {
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+
+@media only screen and (min-width: 851px){
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
