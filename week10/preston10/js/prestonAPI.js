@@ -2,7 +2,7 @@
           Code to populate the weather summary with data
 ------------------------------------------------------------- */
 
-const apiURL = "http://api.openweathermap.org/data/2.5/weather" +
+const apiURL = "https://api.openweathermap.org/data/2.5/weather" +
     "?id=5604473&units=imperial&appid=fe61f743c07bfa797c0b732d9771b3f7";
 //line above requests weather info at town 5604473 in imperial units with my app key
 fetch(apiURL)
@@ -23,7 +23,7 @@ fetch(apiURL)
 ------------------------------------------------------------- */
 
 
-const forecastURL = "http://api.openweathermap.org/data/2.5/forecast" +
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast" +
     "?id=5604473&units=imperial&appid=fe61f743c07bfa797c0b732d9771b3f7";
 //line above requests forecast info at town 5604473 in imperial units with my app key
 fetch(forecastURL)
