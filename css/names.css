@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+header, footer {
+    width: 100%;
+    background-color:steelblue;
+    margin:0 auto;
+    height: 10%;
+    padding: .5em;
+}
+h1 {
+    margin: 0 auto;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#xxoutput, #xyoutput {
+    height:auto;
+    min-height: 100px;
+}
+#xxoutput {
+    background-color: violet;
+}
+#xyoutput {
+    background-color: teal;
+}

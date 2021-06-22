@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week 6 Preston town page">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <title> Week 6 Preston Page </title>
+</head>
+
+<body>
+
+    <header>
+        <div id="pancakeDiv">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+        <img class="logo" src="images/logo.png" alt="Logo">
+        <h2>acClimbatize</h2>
+        <p>The weather source for those with their face on the face</p>
+        <nav>
+            <ul class="navigation">
+                <li class="menu"><a href="#">&#9776; Menu</a></li>
+                <li><a href="../../week9/lesson9/homePage/index.html">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="../../week8/stormcenter/stormcenter.html">Storm Center</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../../week7/lesson7/gallery/gallery.html">Gallery</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Preston Idaho</h2>
+        <picture>
+            <source class="heroImg" srcset="images/heroImg800.jpeg" media="(min-width:601px) and (max-width: 800px">
+            <!--img for tablets-->
+            <source class="heroImg" srcset="images/heroImg1100.jpeg" media="(min-width:801px)">
+            <!--img for desktops-->
+            <img class="heroImg" src="images/heroImg600.jpeg" alt="hero img, landscape shot">
+            <!--img for phones-->
+        </picture>
+        <section class="summary">
+            <div>Weather Summary</div>
+            <b>
+                <p>Current conditions:
+            </b><span id="description"></span></p>
+            <b>
+                <p>Wind:
+            </b><span id="windspeed"></span> mph</p>
+            <b>
+                <p>Temperature:
+            </b><span id="current-temp"></span>&#176; F</p>
+            <b>
+                <p>Humidity:
+            </b><span id="humidity"></span>%</p>
+            <b>
+                <p>High / Low Temperature:
+            </b>
+            <span id="high-temp"></span>&#176; F /
+            <span id="low-temp"></span>&#176; F
+            </p>
+
+            <b>
+                <p>With windchill:
+            </b><span id="windchill"></span></p>
+            <p>Weather data source: openweathermap.org</p>
+        </section>
+        <section class="forecast">
+            <h3>Five Day Forecast</h3>
+            <table class="forecastTable">
+                <thead>
+                    <tr id="data_head">
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="data_table"></tr>
+                </tbody>
+            </table>
+        </section>
+        <article>
+            <h3>Article Title</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span class="moreText"> Ea quo et voluptas
+                    adipisci consequatur fugiat
+                    rerum sequi natus totam laudantium voluptatem, magni provident! Ea dolor odio, exercitationem et
+                    facilis. Here is some more text for good measure, but not too much! People have short attention
+                    spans and it's unfair to expect them to digest anything more substantial than a click-baity
+                    line.</span>
+                facere?</p>
+            <div class="articleImgDiv">
+                <img class="articleImg" src="images/articleImg.jpg" alt="Article Image">
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="footerContent">
+            <img class="mapImg" src="images/mapImg.jpg" alt="Map Image">
+            <div>
+                <p>Contact information</p>
+                <p>Phone: 555-555-5555</p>
+                <p>Email: acclimbatize@placeholder</p>
+                <p>Weather source: <a href="https://openweathermap.org/">Open Weather</a></p>
+                <p id="currentDate"></p>
+                <span>Social Links:</span>
+                <a href="https://www.facebook.com/  "><img src="images/fb.png" alt="Facebook link" class="social"></a>
+                <a href="https://www.linkedin.com/"><img src="images/link.png" alt="LinkedIn link" class="social"></a>
+                <a href="https://www.youtube.com/"><img src="images/yt.png" alt="YouTube link" class="social"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/prestonAPI.js"></script>
+    <script src="js/responsive.js">
+    </script>
+    <script src="js/currentDate.js">
+    </script>
+    <script src="js/pancake.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fontLoader.js"></script>
+    <script src="js/windChill.js"></script>
+</body>
+
+</html>
