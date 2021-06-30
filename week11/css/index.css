@@ -1,0 +1,338 @@
+header,
+h2,
+h3,
+h4 {
+    font-family: "Noto Serif", sans-serif;
+    color: white;
+}
+
+a,
+p,
+span {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.25rem;
+}
+
+.logo {
+    width: 4em;
+    float: left;
+    margin-right: 2em;
+    padding: 1em;
+}
+
+header,
+footer {
+    background-color: #4682b4;
+    line-height: 1em;
+}
+
+h2 {
+    margin-top: 0;
+    padding-top: 1em;
+}
+
+main h2 {
+    color: black;
+}
+
+nav {
+    margin: 0 auto;
+    background-color: olivedrab;
+}
+
+.active a {
+    background-color: green;
+    color: white;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: #000;
+    padding: .75rem;
+    text-align: right;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #000;
+    background-color: wheat;
+    font-weight: 600;
+}
+
+.responsive li {
+    display: block;
+}
+
+main {
+    width: 100%;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.mapImg {
+    max-width: 80%;
+    margin: auto;
+    padding: 5px;
+}
+
+footer {
+    padding: 8px;
+}
+
+footer h4 {
+    margin-top: 0;
+    font-size: 10px;
+}
+
+footer p,
+a {
+    font-size: 1.25rem;
+}
+
+footer span {
+    font-size: 1.25rem;
+    display: none;
+}
+
+.cards {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    margin: 10px auto;
+}
+
+section.card {
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: center;
+    background-color: wheat;
+    padding: .5em;
+    line-height: 1.2rem;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+section img {
+    max-width: 85%;
+    box-shadow: 5px 5px 5px grey;
+}
+section img:hover {
+    box-shadow: 10px 10px 10px grey;
+}
+.intro {
+    margin:0;
+    background-color: steelblue;
+    padding: .5rem;
+    width: 1fr;
+    color: cornsilk;
+    border:1px solid grey;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.intro h2 {
+    color:cornsilk;
+}
+.outro {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.outro img {
+    max-width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 551px) and (max-width:800px) {
+    main {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    nav {
+        margin: 0 auto;
+    }
+
+    .navigation {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    .navigation li:first-child {
+        display: block;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation a {
+        display: block;
+        color: black;
+        padding: .75rem;
+        text-align: right;
+        text-decoration: none;
+    }
+
+    .navigation a:hover {
+        color: #000;
+        background-color: olivedrab;
+        font-weight: 600;
+    }
+
+    .responsive li {
+        display: block;
+    }
+
+    .logo {
+        width: 5em;
+
+    }
+
+    footer div a {
+        display: inline;
+    }
+
+    .social {
+        width: 20px;
+    }
+
+    footer span {
+        display: inline;
+    }
+    section {
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .cards {
+       display: flex;
+       flex-wrap: wrap;
+    }
+    section:nth-child(even) {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+    section img{
+        max-width: 300px;
+    }
+
+    .footerContent {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+    .mapImg {
+        max-width: 300px;
+    }
+    .intro {
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 801px) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        color: #000;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        width: 5em;
+        padding-left: 15%;
+        padding-bottom: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer h4 {
+        margin-bottom: 2vmin;
+    }
+
+    .footerContent {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .mapImg {
+        width: 40%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    footer div a {
+        display: inline;
+    }
+
+    .social {
+        width: 20px;
+    }
+
+    footer span {
+        display: inline;
+    }
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

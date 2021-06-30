@@ -1,16 +1,19 @@
 body {
     margin: 0;
 }
-header, footer {
-    width: 100%;
-    background-color:steelblue;
-    margin:0 auto;
+
+header,
+footer {
+    background-color: steelblue;
+    margin: 0 auto;
     height: 10%;
     padding: .5em;
 }
+
 h1 {
     margin: 0 auto;
 }
+
 main {
     max-width: 800px;
     margin: 0 auto;
@@ -18,13 +21,19 @@ main {
     display: flex;
     justify-content: space-evenly;
 }
-#xxoutput, #xyoutput {
-    height:auto;
-    min-height: 100px;
+
+#xxdiv,
+#xydiv {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    justify-content: center;
 }
-#xxoutput {
-    background-color: violet;
-}
+
+#xxoutput,
 #xyoutput {
-    background-color: teal;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin: auto;
 }
