@@ -1,0 +1,49 @@
+{
+    "days": [{
+            "sunday": {
+                "hours": "closed",
+                "ordinances": "none"
+            }
+        },
+        {
+            "monday": {
+                "hours": "closed",
+                "ordinances": "none"
+            }
+        },
+        {
+            "tuesday": {
+                "hours": "7a-10p",
+                "ordinances": "B/C, I, E, SS/SP"
+            }
+        },
+        {
+            "wednesday": {
+                "hours": "7a-10p",
+                "ordinances": "B/C, I, E, SS/SP"
+            }
+        },
+        {
+            "thursday": {
+                "hours": "7a-10p",
+                "ordinances": "B/C, I, E, SS/SP"
+            }
+        },
+        {
+            "friday": {
+                "hours": "7a-10p",
+                "ordinances": "B/C, I, E, SS/SP"
+            }
+        },
+        {
+            "saturday": {
+                "hours": "7a-10p",
+                "ordinances": "B/C, I, E, SS/SP"
+            }
+        }
+    ],
+    "closures":[{
+        "newyears":"1 January 2021",
+        "christmas":"25 December 2021"
+    }]
+}
