@@ -1,0 +1,136 @@
+@import "normalize";
+
+@import "variables";
+
+@import "index";
+
+@import "temple";
+
+@import "contact";
+
+@import "reserve";
+
+@import "services";
+
+@import "missionary";
+
+@import "reception";
+
+body {
+    font-family: $serif, serif;
+    background:rgb(216, 223, 198);
+ 
+}
+
+
+header {
+    .container-fluid {
+        padding: 0;
+        background: $secondary;
+    }
+        
+    #navbarNav {
+        background: $secondary;
+        width: 100%;
+        img{
+            width: 30%;
+            max-width:300px;
+        }
+        ul li {
+            background: $primary;
+            padding: .2rem;
+            margin: 0 .25rem;
+            border-radius: 4px;
+            a {
+                color: black;
+                transition: .35s;
+            }
+            a:hover{
+                background: $highlight;
+                color:white;
+                transition: .35s;
+            }
+        }
+    }
+}
+
+main {
+    width: 100%;
+    max-width: $maxWidth;
+    margin: 0 auto;
+    a{
+        text-decoration: none;
+    } 
+    img{
+        box-shadow: none;
+        transition:.35s;
+    }
+    img:hover {
+        box-shadow: .5rem .5rem .5rem grey;
+        transition: .35s;
+    }
+    .form{
+        form{
+            fieldset{
+                display: block;
+                border: 4px solid $secondary;
+                border-radius: 8px;
+            }
+             input, select{
+                display: block;
+                font-size: 1rem;
+                border: 1px solid $secondary;
+                border-radius: 8px;
+                padding: .75rem;
+                width: 100%;
+                max-width: 25rem;
+            }
+            input:required, select:required {
+                border-left: 5px solid rgb(180, 9, 9);
+            }
+            input:required:valid, select:required:valid {
+                border-left: 5px solid rgb(2, 88, 2);
+            }
+            input.submitButton {
+                border:none;
+                background-color: $primary;
+                color: black;
+                font-weight: 800;
+                border-radius: 1rem;
+                padding: .75rem 1.5rem;
+                width: 100%;
+                max-width: 25rem;
+                transition:$transition;
+            }
+            .submitButton:hover{
+                background-color: $highlight;
+                color: white;
+                transition:$transition;
+            }
+        }
+    }
+   
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: $secondary;   
+    .footerContent {
+        max-width: $maxWidth;
+        margin:  0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        #disclaimer {
+            font-size: .7rem;
+            margin: 0 1rem;
+            width: 20%;
+        }
+        img {
+            max-width: 200px;
+            margin: 0 1rem;
+        }
+    } 
+}

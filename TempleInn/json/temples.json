@@ -2,15 +2,15 @@
     "days": [{
             "sunday": {
                 "day":"Sunday",
-                "hours": "closed",
-                "ordinances": "none"
+                "hours": "Closed",
+                "ordinances": "None"
             }
         },
         {
             "monday": {
                 "day":"Monday",
-                "hours": "closed",
-                "ordinances": "none"
+                "hours": "Closed",
+                "ordinances": "None"
             }
         },
         {

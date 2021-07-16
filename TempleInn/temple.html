@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Home page for Temple Inn and Suites, providing premiere hotel services to patrons of temples in dozens of locations">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon link-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!--Google Font - Parisienne-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <!--Google Font - Merriweather-->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <!--BootStrap CSS library link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Link to custom CSS-->
+    <link rel="stylesheet" href="css/templeStyle.css">
+    <title>Temple Information</title>
+</head>
+
+<body>
+    <header>
+        <!--Header with links to other pages-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <img src="images/logo.png" alt="temple inn logo">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Temples</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html">Reservations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Select Temple Summaries</h1>
+
+        <!--div to hold four temple cards-->
+        <div id="cardDiv">
+            <!--Billings temple-->
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Billings, Montana</h5>
+                    <img src="images/billings.jpg" alt="temple">
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Address: 3100 Rim Point Dr, Billings, MT 59106</li>
+                    <li class="list-group-item">Telephone: +1(406)655-0607</li>
+                    <li class="list-group-item">Services: Clothing rental, distribution center nearby</li>
+                    <li class="list-group-item">Announced: 30 August 1996</li>
+                    <li class="list-group-item">Dedicated: 20 November 1999</li>
+            
+            
+                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                            <th>Ordinances</th>
+                        </tr>
+                    </thead>
+                    <tbody id="billingsTableBody">
+                        
+                    </tbody>
+                </table>
+                <div class="weather">
+                    <p>Current weather: <span id="billingsWeather"></span> </p>
+                    <p>Current temperature: <span id="billingsTempF"></span>&#176;F / <span
+                            id="billingsTempC"></span>&#176;C</p>
+                </div>
+            </div>
+
+            <!--San Diego temple-->
+            <div class="card" id="sanDiego">
+                <div class="card-body">
+                    <h5 class="card-title">San Diego, California</h5>
+                    <img src="images/sanDiego.jpg" alt="temple">
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Address: 7474 Charmant Drive, San Diego CA 92122</li>
+                    <li class="list-group-item">Telephone: +1 (858)622-0991</li>
+                    <li class="list-group-item">Services: Distribution center nearby</li>
+                    <li class="list-group-item">Announced: 7 April 1984</li>
+                    <li class="list-group-item">Dedicated: 25 April 1993</li>
+            
+            
+                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                            <th>Ordinances</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sanDiegoTableBody">
+                        
+                    </tbody>
+                </table>
+                <div class="weather">
+                    <p>Current weather: <span id="sanDiegoWeather"></span> </p>
+                    <p>Current temperature: <span id="sanDiegoTempF"></span>&#176;F / <span
+                            id="sanDiegoTempC"></span>&#176;C</p>
+                </div>
+            </div>
+
+            <!--Kyiv, Ukraine temple-->
+            <div class="card" id="kyiv">
+                <div class="card-body">
+                    <h5 class="card-title">Kyiv, Ukraine</h5>
+                    <img src="images/kyiv.jpg" alt="temple">
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Address: 1 Yabluneva Street
+                        v. Sofiivs’ka Borshchagivka
+                        Kyevo-Sviatoshyns’ky Rayon, Kyivs’ka Oblast, 08131, Ukraine,</li>
+                    <li class="list-group-item">Telephone: (380) 44-371-4088</li>
+                    <li class="list-group-item">Services: Distribution center nearby</li>
+                    <li class="list-group-item">Announced: 20 July 1998</li>
+                    <li class="list-group-item">Dedicated: 29 August 2010</li>
+            
+            
+                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                            <th>Ordinances</th>
+                        </tr>
+                    </thead>
+                    <tbody id="kyivTableBody">
+                        
+                    </tbody>
+                </table>
+                <div class="weather">
+                    <p>Current weather: <span id="kyivWeather"></span> </p>
+                    <p>Current temperature: <span id="kyivTempF"></span>&#176;F / <span
+                            id="kyivTempC"></span>&#176;C</p>
+                </div>
+            </div>
+
+            <!--Apia, Samoa temple-->
+            <div class="card" if="apia">
+                <div class="card-body">
+                    <h5 class="card-title">Apia, Samoa</h5>
+                    <img src="images/apia.jpg" alt="temple">
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Address: Vaitele Street
+                        Pesega
+                        Apia, Samoa</li>
+                    <li class="list-group-item">Telephone: (685) 64-230</li>
+                    <li class="list-group-item">Services: Distribution center nearby</li>
+                    <li class="list-group-item">Announced: 15 October 1977</li>
+                    <li class="list-group-item">Dedicated: 5 August 1983</li>
+            
+            
+                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                            <th>Ordinances</th>
+                        </tr>
+                    </thead>
+                    <tbody id="apiaTableBody">
+                        
+                    </tbody>
+                </table>
+                <div class="weather">
+                    <p>Current weather: <span id="apiaWeather"></span> </p>
+                    <p>Current temperature: <span id="apiaTempF"></span>&#176;F / <span
+                            id="apiaTempC"></span>&#176;C</p>
+                </div>
+            </div>
+            </div>
+
+            <!--end of temple cards div-->
+        </div>
+        <div id="closures" class="purpose">
+            <h5>Other Closure Dates:</h5>
+            <p>New Years Day: <span id="newYears"></span></p>
+            <p>Christmas Day: <span id="christmas"></span></p>
+
+        </div>
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footerContent">
+            <img src="images/logo.png" alt="temple inn logo">
+            <p>Temple Inn & Suites, &#169; 2021</p>
+            <p id="disclaimer">Temple Inn & Suites is not affiliated with or endorsed by the Church of Jesus Christ of
+                Latter-Day Saints in any way.</p>
+        </div>
+    </footer>
+
+    <!--CDN to bring in Javascript from BootStrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!--script to bring weather data to temple cards-->
+    <script src="js/weatherAPI.js"></script>
+    <!--script to put JSON data into HTML table-->
+    <script src="js/billingsSchedule.js"></script>
+    <script src="js/sanDiegoSchedule.js"></script>
+    <script src="js/kyivSchedule.js"></script>
+    <script src="js/apiaSchedule.js"></script>
+</body>
+
+</html>

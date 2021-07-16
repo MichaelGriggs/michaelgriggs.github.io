@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="contact page for Temple Inn and Suites, showing map and basic contact form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon link-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!--Google Font - Parisienne-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <!--Google Font - Merriweather-->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <!--BootStrap CSS library link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Link to custom CSS-->
+    <link rel="stylesheet" href="css/templeStyle.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <!--Header with links to other pages-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <img src="images/logo.png" alt="temple inn logo">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="temple.html">Temples</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html">Reservations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!--contains contact information-->
+        <div class="info">
+            <h2>Contact us</h2>
+            <p>Phone: +1 (555) 404-5544</p>
+            <p>Email: contact@templeinn.net</p>
+            <p>Business Hours: Mon-Sat 7am - 8pm (EST)</p>
+            <p>24-hour Emergency Line available</p>
+        </div>
+
+        <!--contains basic contact form-->
+        <div class="form">
+            <form method="get" action="">
+                <fieldset>
+                    <legend> Your information</legend>
+                    <label class="above">Full Name * <input type="text" name="fullName" required></label>
+                    <label class="above">Phone Number * <input type="tel" name="phone" required></label>
+                    <label class="above">Email <input type="email" name="email" placeholder="demo@email.demo"></label>
+                    <label>Comments and questions<br>
+                    <textarea name="additional" cols="50" rows="10"></textarea></label>
+                    <input type="submit" class="submitButton" value="Send Message"></input>
+                </fieldset>
+
+            </form>
+        </div>
+
+        <!--contains embedded map-->
+        <div class="map">
+            <h3>Headquarters: 4800 Montgomery Ln #300, Bethesda, MD 20814</h3>
+            <div class="mapContainer">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370284895!2d-77.09772048515225!3d38.98325594948471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1625924716187!5m2!1sen!2sus"
+                    class="responsive-iframe" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footerContent">
+            <img src="images/logo.png" alt="temple inn logo">
+            <p>Temple Inn & Suites, &#169; 2021</p>
+            <p id="disclaimer">Temple Inn & Suites is not affiliated with or endorsed by the Church of Jesus Christ of
+                Latter-Day Saints in any way.</p>
+        </div>
+    </footer>
+
+    <!--CDN to bring in Javascript from BootStrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

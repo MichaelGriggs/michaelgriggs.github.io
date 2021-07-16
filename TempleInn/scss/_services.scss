@@ -1,0 +1,21 @@
+.serviceFlex {
+    display: flex;
+    margin: 1rem auto;
+    img{
+        width: 30%;
+        margin: 0 1rem;
+    }
+    a{
+        background-color: $primary;
+        border-radius: 4px;
+        padding: .25rem;
+        color:black;
+        transition:$transition;
+
+    }
+    a:hover{
+        background-color: $highlight;
+        color: white;
+        transition:$transition;
+    }
+}

@@ -1,0 +1,28 @@
+.amenities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    .card {
+        background-color: $primary;
+        margin: 1rem .5rem;
+        width: 30%;
+        padding:.5rem;
+        min-width: 200px;
+        max-width:280px;
+        border: 2px solid $secondary;
+        border-radius: 8x;
+        .card-body img{
+            width:100%;
+        }
+    }
+    .card:hover {
+        background-color: #c3e9c5;
+        transition:$transition;
+    }
+}
+main a{
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+}

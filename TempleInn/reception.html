@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="wedding reception page for Temple Inn and Suites, providing info about catering and setup options for receptions">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon link-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!--Google Font - Parisienne-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <!--Google Font - Merriweather-->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <!--BootStrap CSS library link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Link to custom CSS-->
+    <link rel="stylesheet" href="css/templeStyle.css">
+    <title>Wedding Receptions - Temple Inn & Suites</title>
+</head>
+
+<body>
+    <header>
+        <!--Header with links to other pages-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <img src="images/logo.png" alt="temple inn logo">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="temple.html">Temples</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html">Reservations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Wedding Receptions</h1>
+        <!--div with statement about being a part of the big day-->
+        <div id="reception">
+            <h3>Here for your big day</h3>
+            <p>Planning a wedding can be hectic. To put you at ease and help make this day truly unforgettable, we rent
+                our beautiful common areas as reception venues. Each venue comes with a simple catering menu that
+                presents several distinct and delicious options (Mediterranean, Texas barbecue, and Thai), as well as
+                kitchen access if you'd prefer that to catering. Specific layout and decoration options vary by location, so be sure to contact us today to
+                investigate how we can be a part of the beginning of your 'forever'.</p>
+        </div>
+
+        <!--Div to show menu options-->
+        <div id="menuDiv">
+        <div class="card">
+            <h5 class="card-title">Mediterranean</h5>
+            <div class="card-body">
+                <img src="images/med.png" alt="Mediterranean">
+                <p class="card-text">This menu includes salads, pastas, pizza, and plenty of fresh fruits and vegetables.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-title">Texas barbecue</h5>
+            <div class="card-body">
+                <img src="images/tex.png" alt="Texas barbecue">
+                <p class="card-text">If you're seeking meat, beans, and a hearty meal, look no further.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-title">Thai</h5>
+            <div class="card-body">
+                <img src="images/thai.png" alt="Texas barbecue">
+                <p class="card-text">This exotic option showcases bright (and occasionally burning) Oriental flavors.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--contains basic contact form-->
+    <div class="form">
+        <form method="get">
+            <fieldset>
+                <legend> Contact us for more information - rates and dates</legend>
+                <label class="above">Full Name *<input type="text" name="fullName" required></label>
+                <label class="above">Email *<input type="email" name="email" placeholder="demo@email.demo" required></label>
+                <label class="above">Date of Reception *<input type="date" required></label>
+          
+                <label>Requests and Specific Questions <br>
+                <textarea name="additional" cols="45" rows="7"></textarea></label>
+                <input type="submit" class="submitButton" value="Send Message"></input>
+            </fieldset>
+        </form>
+
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footerContent">
+            <img src="images/logo.png" alt="temple inn logo">
+            <p>Temple Inn & Suites, &#169; 2021</p>
+            <p id="disclaimer">Temple Inn & Suites is not affiliated with or endorsed by the Church of Jesus Christ of
+                Latter-Day Saints in any way.</p>
+        </div>
+    </footer>
+
+    <!--CDN to bring in Javascript from BootStrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+@media only screen and (max-width: 816px){
+    table {
+        line-height: 1.75rem;
+        border-bottom:2px solid $secondary;
+        thead {
+                text-align: center;
+                tr{
+                    padding:.25rem;
+                }
+        }
+        tbody{
+            tr{
+                padding:1rem;
+            }
+        }
+    }
+    
+    
+    
+
+    .card{
+        width:75%;
+        margin:auto;
+        min-width: 15rem;
+        .card-body img{
+                width:100%;
+                margin: auto;
+        }
+    }
+    
+
+}
+
+
+@media only screen and (min-width: 817px){
+
+    table {
+        line-height: 1.75rem;
+        border-bottom:2px solid $secondary;
+    }
+    #cardDiv{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    .card{
+        width: 48%;
+        min-width:15rem;
+        border: 2px solid $secondary;
+        border-radius: 8px;
+        .card-body img{
+            width:100%;
+            margin: auto;
+    }
+    }
+    div{
+        margin: .5rem;
+    }
+}
+    
+   
+
+}
+
+   

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Reservations page for Temple Inn and Suites, collecting information to place reservation detail for potential patrons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon link-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!--Google Font - Parisienne-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <!--Google Font - Merriweather-->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <!--BootStrap CSS library link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Link to custom CSS-->
+    <link rel="stylesheet" href="css/templeStyle.css">
+    <title>Temple Inn & Suites Reservations</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <img src="images/logo.png" alt="temple inn logo">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="temple.html">Temples</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reservations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Make a Reservation</h1>
+        <!--information about amenities in different rooms-->
+        <div class="amenities">
+            <!--economy room-->
+            <div class="card">
+                <h5 class="card-title">Economy Room</h5>
+                <div class="card-body">
+                    <img src="images/economy.png" alt="economy room image">
+                    <p class="card-text">These rooms are ideal for singles or couples. Starting as low as $29/night.*
+                    </p>
+                </div>
+                <h5>Amenities:</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">1 Queen-sized bed</li>
+                    <li class="list-group-item">Half bathroom</li>
+                    <li class="list-group-item">Complimentary breakfast</li>
+                    <li class="list-group-item">Access to exercise/workout room and pool</li>
+                    <li class="list-group-item">High-speed wifi and smart TV in room</li>
+                    <li class="list-group-item">Parking space and temple shuttle</li>
+                    <li class="list-group-item">Family History Consultation service in lobby</li>
+                </ul>
+            </div>
+            <!--family room-->
+            <div class="card">
+                <h5 class="card-title">Family Room</h5>
+                <div class="card-body">
+                    <img src="images/family.png" alt="family room image">
+                    <p class="card-text">Small families will find these rooms ideal. As low as $49/night.*</p>
+                </div>
+                <h5>Amenities:</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">2 Queen-sized beds, 1 couch</li>
+                    <li class="list-group-item">Full bathroom</li>
+                    <li class="list-group-item">Complimentary breakfast</li>
+                    <li class="list-group-item">Access to exercise/workout room and pool</li>
+                    <li class="list-group-item">High-speed wifi and smart TV in room</li>
+                    <li class="list-group-item">Parking space and temple shuttle</li>
+                    <li class="list-group-item">Family History Consultation service in lobby</li>
+                </ul>
+            </div>
+
+            <!--kitchenette-->
+            <div class="card">
+                <h5 class="card-title">Kitchenette</h5>
+                <div class="card-body">
+                    <img src="images/kitchenette.png" alt="kitchenette image">
+                    <p class="card-text">Long-term stays are perfectly suited to these rooms. As low as $25/night when
+                        an extended stay is booked.*</p>
+                </div>
+                <h5>Amenities:</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">1 Queen-sized bed, fully-equipped kitchenette</li>
+                    <li class="list-group-item">Full bathroom</li>
+                    <li class="list-group-item">Complimentary breakfast</li>
+                    <li class="list-group-item">Access to exercise/workout room and pool</li>
+                    <li class="list-group-item">High-speed wifi and smart TV in room</li>
+                    <li class="list-group-item">Parking space and temple shuttle</li>
+                    <li class="list-group-item">Family History Consultation service in lobby</li>
+                </ul>
+            </div>
+            * Rates subject to vary based on location, time of year, and availability. We do try our best to give you as
+            reasonable a rate as possible.
+        </div>
+
+        <!--form to collect reservation info-->
+        <div class="form">
+            <form action="get">
+                <fieldset>
+
+                    <legend>A little about you</legend>
+                    <label class="above>">Full Name * <input type="text" required></label>
+                    <label class="above>">E-mail * <input type="text" required placeholder="user@email.demo"></label>
+                    <label class="above>">Phone <input type="tel" placeholder="(XXX) XXX-XXXX"></label>
+                    <label class="above>">Home state/country <input type="text"></label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>About your room(s)</legend>
+                    <label>Location * <select name="location" required>
+                            <option value="" disabled selected>Please Select</option>
+                            <option value="Rexburg">Rexburg</option>
+                            <option value="idahoFalls">Idaho Falls</option>
+                            <option value="spokane">Spokane</option>
+                            <option value="brigham">Brigham City</option>
+                            <option value="logan">Logan</option>
+                            <option value="afton">Afton</option>
+                        </select></label>
+                    <label class="above">Check-in Date * <input type="date" required></label>
+                    <label class="above">Check-out Date * <input type="date" required></label>
+                    <label>Number of rooms * <select name="quantity" required>
+                            <option value="" disabled selected>Please Select</option>
+                            <option value="single">One</option>
+                            <option value="double">Two</option>
+                            <option value="triple">Three</option>
+                        </select></label>
+                    <label>Type of rooms <select name="type">
+                            <option value="" disabled selected>Please Select</option>
+                            <option value="economy">Economy (1 Queen)</option>
+                            <option value="family">Family (2 Queens, 1 couch)</option>
+                            <option value="kitchenette">Kitchenette (1 Queen, kitchen facilities)</option>
+                        </select></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional requests or comments</legend>
+                    <label><textarea name="additional" cols="30" rows="7"></textarea></label>
+                </fieldset>
+                <input type="submit" class="submitButton" value="Create your Reservation"></input>
+            </form>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footerContent">
+            <img src="images/logo.png" alt="temple inn logo">
+            <p>Temple Inn & Suites, &#169; 2021</p>
+            <p id="disclaimer">Temple Inn & Suites is not affiliated with or endorsed by the Church of Jesus Christ of
+                Latter-Day Saints in any way.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
